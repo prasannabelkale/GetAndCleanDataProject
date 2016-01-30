@@ -5,7 +5,7 @@ The task was developing an R program to clean the source datasets from the **Hum
 **Run_analysis.R** does the following.
 
 1. Merges the training and the test datasets to create one data set.
-	*reads features.txt dataset to get features
+*reads features.txt dataset to get features.
 *reads activity_labels.txt to get the Activity names.
 *makes variable names descriptive
 *reads the X_train.txt , Subject_train.txt and Y_train.txt  
@@ -14,7 +14,10 @@ The task was developing an R program to clean the source datasets from the **Hum
 *merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
 *Also, mind to keep the same order as the train datasets.
 *merges the train and test datasets using rbind.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.* searches for "-mean" and "-standard" in names of the resultant set.3. Creates a independent tidy data set with the average of each variable for each activity and each subject.4. Writes the tidy data set into a file.
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement.* searches for "-mean" and "-standard" in names of the resultant set.
+3. Creates a independent tidy data set with the average of each variable for each activity and each subject.
+4. Writes the tidy data set into a file.
 
 
 This version of the project retains the source files from the Human Activity Recognition Using SmartPhones project in the same folder structure and adds the following files as part of the cleaning and tidying of the summary project. 
