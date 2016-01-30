@@ -8,7 +8,7 @@ Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
-www.smartlab.ws''
+www.smartlab.ws
 ==================================================================
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
@@ -19,20 +19,20 @@ The field descriptions of the original source are specified in the features_info
 
 The output tidy_data.txt has obtained by running Run_Analysis.R on the datasets from UCI Har Dataset. Effectively, Run_Analysis.R:
 
-	1. Merges the training and the test datasets to create one data set.
-		* reads features.txt dataset to get features
-		* reads activity_labels.txt to get the Activity names.
-		* makes variable names descriptive
-		* reads the X_train.txt , Subject_train.txt and Y_train.txt  
-		* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
-		* reads the X_test.txt , Subject_test.txt and Y_test.txt  
-		* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
-		* Also, mind to keep the same order as the train datasets.
-		* merges the train and test datasets using rbind.
-	2. Extracts only the measurements on the mean and standard deviation for each measurement.
-		* searches for "-mean" and "-standard" in names of the resultant set.
-	3. Creates a independent tidy data set with the average of each variable for each activity and each subject.
-	4. Writes the tidy data set into a file.
+1. Merges the training and the test datasets to create one data set.
+* reads features.txt dataset to get features
+* reads activity_labels.txt to get the Activity names.
+* makes variable names descriptive
+* reads the X_train.txt , Subject_train.txt and Y_train.txt  
+* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
+* reads the X_test.txt , Subject_test.txt and Y_test.txt  
+* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
+* Also, mind to keep the same order as the train datasets.
+* merges the train and test datasets using rbind.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+* searches for "-mean" and "-standard" in names of the resultant set.
+3. Creates a independent tidy data set with the average of each variable for each activity and each subject.
+4. Writes the tidy data set into a file.
 
 The tidy data set contains the above data set summarised as average of means of standard deviation data at subject and activitiy level and contains the Subject, Activity Name and 79 additional fields, as mentioned below. 
 
