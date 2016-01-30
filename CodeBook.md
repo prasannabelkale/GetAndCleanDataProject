@@ -1,4 +1,4 @@
-The task was about using th.e ** Human Activity Recognition Using Smartphones Dataset ** conduted by the following team:
+The task was about using th.e **Human Activity Recognition Using Smartphones Dataset** conduted by the following team:
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -20,103 +20,103 @@ The field descriptions of the original source are specified in the features_info
 The output tidy_data.txt has obtained by running Run_Analysis.R on the datasets from UCI Har Dataset. Effectively, Run_Analysis.R:
 
 1. Merges the training and the test datasets to create one data set.
-* reads features.txt dataset to get features
-* reads activity_labels.txt to get the Activity names.
-* makes variable names descriptive
-* reads the X_train.txt , Subject_train.txt and Y_train.txt  
-* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
-* reads the X_test.txt , Subject_test.txt and Y_test.txt  
-* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
-* Also, mind to keep the same order as the train datasets.
-* merges the train and test datasets using rbind.
+	* reads features.txt dataset to get features
+	* reads activity_labels.txt to get the Activity names.
+	* makes variable names descriptive
+	* reads the X_train.txt , Subject_train.txt and Y_train.txt  
+	* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
+	* reads the X_test.txt , Subject_test.txt and Y_test.txt  
+	* merges them based on row numbers; mind the order of the merge to retain Subject and Activity at first.
+	* Also, mind to keep the same order as the train datasets.
+	* merges the train and test datasets using rbind.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-* searches for "-mean" and "-standard" in names of the resultant set.
+	* searches for "-mean" and "-standard" in names of the resultant set.
 3. Creates a independent tidy data set with the average of each variable for each activity and each subject.
 4. Writes the tidy data set into a file.
 
 The tidy data set contains the above data set summarised as average of means of standard deviation data at subject and activitiy level and contains the Subject, Activity Name and 79 additional fields, as mentioned below. 
 
-Subject
-Activity.Name
-time-Body-Acceleration-mean-X
-time-Body-Acceleration-mean-Y
-time-Body-Acceleration-mean-Z
-time-Body-Acceleration-standard-deviation-X
-time-Body-Acceleration-standard-deviation-Y
-time-Body-Acceleration-standard-deviation-Z
-time-Gravity-Acceleration-mean-X
-time-Gravity-Acceleration-mean-Y
-time-Gravity-Acceleration-mean-Z
-time-Gravity-Acceleration-standard-deviation-X
-time-Gravity-Acceleration-standard-deviation-Y
-time-Gravity-Acceleration-standard-deviation-Z
-time-Body-Acceleration-Jerk-mean-X
-time-Body-Acceleration-Jerk-mean-Y
-time-Body-Acceleration-Jerk-mean-Z
-time-Body-Acceleration-Jerk-standard-deviation-X
-time-Body-Acceleration-Jerk-standard-deviation-Y
-time-Body-Acceleration-Jerk-standard-deviation-Z
-time-Body-AngularVelocity-mean-X
-time-Body-AngularVelocity-mean-Y
-time-Body-AngularVelocity-mean-Z
-time-Body-AngularVelocity-standard-deviation-X
-time-Body-AngularVelocity-standard-deviation-Y
-time-Body-AngularVelocity-standard-deviation-Z
-time-Body-AngularVelocity-Jerk-mean-X
-time-Body-AngularVelocity-Jerk-mean-Y
-time-Body-AngularVelocity-Jerk-mean-Z
-time-Body-AngularVelocity-Jerk-standard-deviation-X
-time-Body-AngularVelocity-Jerk-standard-deviation-Y
-time-Body-AngularVelocity-Jerk-standard-deviation-Z
-time-Body-Acceleration-Magnitude-mean
-time-Body-Acceleration-Magnitude-standard-deviation
-time-Gravity-Acceleration-Magnitude-mean
-time-Gravity-Acceleration-Magnitude-standard-deviation
-time-Body-Acceleration-Jerk-Magnitude-mean
-time-Body-Acceleration-Jerk-Magnitude-standard-deviation
-time-Body-AngularVelocity-Magnitude-mean
-time-Body-AngularVelocity-Magnitude-standard-deviation
-time-Body-AngularVelocity-Jerk-Magnitude-mean
-time-Body-AngularVelocity-Jerk-Magnitude-standard-deviation
-freq-Body-Acceleration-mean-X
-freq-Body-Acceleration-mean-Y
-freq-Body-Acceleration-mean-Z
-freq-Body-Acceleration-standard-deviation-X
-freq-Body-Acceleration-standard-deviation-Y
-freq-Body-Acceleration-standard-deviation-Z
-freq-Body-Acceleration-meanFreq-X
-freq-Body-Acceleration-meanFreq-Y
-freq-Body-Acceleration-meanFreq-Z
-freq-Body-Acceleration-Jerk-mean-X
-freq-Body-Acceleration-Jerk-mean-Y
-freq-Body-Acceleration-Jerk-mean-Z
-freq-Body-Acceleration-Jerk-standard-deviation-X
-freq-Body-Acceleration-Jerk-standard-deviation-Y
-freq-Body-Acceleration-Jerk-standard-deviation-Z
-freq-Body-Acceleration-Jerk-meanFreq-X
-freq-Body-Acceleration-Jerk-meanFreq-Y
-freq-Body-Acceleration-Jerk-meanFreq-Z
-freq-Body-AngularVelocity-mean-X
-freq-Body-AngularVelocity-mean-Y
-freq-Body-AngularVelocity-mean-Z
-freq-Body-AngularVelocity-standard-deviation-X
-freq-Body-AngularVelocity-standard-deviation-Y
-freq-Body-AngularVelocity-standard-deviation-Z
-freq-Body-AngularVelocity-meanFreq-X
-freq-Body-AngularVelocity-meanFreq-Y
-freq-Body-AngularVelocity-meanFreq-Z
-freq-Body-Acceleration-Magnitude-mean
-freq-Body-Acceleration-Magnitude-standard-deviation
-freq-Body-Acceleration-Magnitude-meanFreq
-freq-Body-Acceleration-Jerk-Magnitude-mean
-freq-Body-Acceleration-Jerk-Magnitude-standard-deviation
-freq-Body-Acceleration-Jerk-Magnitude-meanFreq
-freq-Body-AngularVelocity-Magnitude-mean
-freq-Body-AngularVelocity-Magnitude-standard-deviation
-freq-Body-AngularVelocity-Magnitude-meanFreq
-freq-Body-AngularVelocity-Jerk-Magnitude-mean
-freq-Body-AngularVelocity-Jerk-Magnitude-standard-deviation
-freq-Body-AngularVelocity-Jerk-Magnitude-meanFreq
+* Subject
+* Activity.Name
+* time-Body-Acceleration-mean-X
+* time-Body-Acceleration-mean-Y
+* time-Body-Acceleration-mean-Z
+* time-Body-Acceleration-standard-deviation-X
+* time-Body-Acceleration-standard-deviation-Y
+* time-Body-Acceleration-standard-deviation-Z
+* time-Gravity-Acceleration-mean-X
+* time-Gravity-Acceleration-mean-Y
+* time-Gravity-Acceleration-mean-Z
+* time-Gravity-Acceleration-standard-deviation-X
+* time-Gravity-Acceleration-standard-deviation-Y
+* time-Gravity-Acceleration-standard-deviation-Z
+* time-Body-Acceleration-Jerk-mean-X
+* time-Body-Acceleration-Jerk-mean-Y
+* time-Body-Acceleration-Jerk-mean-Z
+* time-Body-Acceleration-Jerk-standard-deviation-X
+* time-Body-Acceleration-Jerk-standard-deviation-Y
+* time-Body-Acceleration-Jerk-standard-deviation-Z
+* time-Body-AngularVelocity-mean-X
+* time-Body-AngularVelocity-mean-Y
+* time-Body-AngularVelocity-mean-Z
+* time-Body-AngularVelocity-standard-deviation-X
+* time-Body-AngularVelocity-standard-deviation-Y
+* time-Body-AngularVelocity-standard-deviation-Z
+* time-Body-AngularVelocity-Jerk-mean-X
+* time-Body-AngularVelocity-Jerk-mean-Y
+* time-Body-AngularVelocity-Jerk-mean-Z
+* time-Body-AngularVelocity-Jerk-standard-deviation-X
+* time-Body-AngularVelocity-Jerk-standard-deviation-Y
+* time-Body-AngularVelocity-Jerk-standard-deviation-Z
+* time-Body-Acceleration-Magnitude-mean
+* time-Body-Acceleration-Magnitude-standard-deviation
+* time-Gravity-Acceleration-Magnitude-mean
+* time-Gravity-Acceleration-Magnitude-standard-deviation
+* time-Body-Acceleration-Jerk-Magnitude-mean
+* time-Body-Acceleration-Jerk-Magnitude-standard-deviation
+* time-Body-AngularVelocity-Magnitude-mean
+* time-Body-AngularVelocity-Magnitude-standard-deviation
+* time-Body-AngularVelocity-Jerk-Magnitude-mean
+* time-Body-AngularVelocity-Jerk-Magnitude-standard-deviation
+* freq-Body-Acceleration-mean-X
+* freq-Body-Acceleration-mean-Y
+* freq-Body-Acceleration-mean-Z
+* freq-Body-Acceleration-standard-deviation-X
+* freq-Body-Acceleration-standard-deviation-Y
+* freq-Body-Acceleration-standard-deviation-Z
+* freq-Body-Acceleration-meanFreq-X
+* freq-Body-Acceleration-meanFreq-Y
+* freq-Body-Acceleration-meanFreq-Z
+* freq-Body-Acceleration-Jerk-mean-X
+* freq-Body-Acceleration-Jerk-mean-Y
+* freq-Body-Acceleration-Jerk-mean-Z
+* freq-Body-Acceleration-Jerk-standard-deviation-X
+* freq-Body-Acceleration-Jerk-standard-deviation-Y
+* freq-Body-Acceleration-Jerk-standard-deviation-Z
+* freq-Body-Acceleration-Jerk-meanFreq-X
+* freq-Body-Acceleration-Jerk-meanFreq-Y
+* freq-Body-Acceleration-Jerk-meanFreq-Z
+* freq-Body-AngularVelocity-mean-X
+* freq-Body-AngularVelocity-mean-Y
+* freq-Body-AngularVelocity-mean-Z
+* freq-Body-AngularVelocity-standard-deviation-X
+* freq-Body-AngularVelocity-standard-deviation-Y
+* freq-Body-AngularVelocity-standard-deviation-Z
+* freq-Body-AngularVelocity-meanFreq-X
+* freq-Body-AngularVelocity-meanFreq-Y
+* freq-Body-AngularVelocity-meanFreq-Z
+* freq-Body-Acceleration-Magnitude-mean
+* freq-Body-Acceleration-Magnitude-standard-deviation
+* freq-Body-Acceleration-Magnitude-meanFreq
+* freq-Body-Acceleration-Jerk-Magnitude-mean
+* freq-Body-Acceleration-Jerk-Magnitude-standard-deviation
+* freq-Body-Acceleration-Jerk-Magnitude-meanFreq
+* freq-Body-AngularVelocity-Magnitude-mean
+* freq-Body-AngularVelocity-Magnitude-standard-deviation
+* freq-Body-AngularVelocity-Magnitude-meanFreq
+* freq-Body-AngularVelocity-Jerk-Magnitude-mean
+* freq-Body-AngularVelocity-Jerk-Magnitude-standard-deviation
+* freq-Body-AngularVelocity-Jerk-Magnitude-meanFreq
 
 The time- fields are on time domain and those with freq- are in the frequency domain. The fields have been expanded to be more meaningful. 
 
